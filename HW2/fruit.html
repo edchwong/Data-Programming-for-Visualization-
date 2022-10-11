@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>fruits</title>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <style type="text/css">
+            div {
+                display: block;
+                background-color: lightgray;
+                height: 15px
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div></div>
+
+        <script type="text/javascript">
+            var fruits = [
+                {
+                    kind: "grape",
+                    color: "red",
+                    quantity: 12
+                },
+                {
+                    kind: "kiwi",
+                    color: "brown",
+                    quantity: 98
+                },
+                {
+                    kind: "banana",
+                    color: "yellow",
+                    quantity: 0
+                }
+            ];
+            
+            var temp;
+            for (i=0;i<fruits.length;i++){
+                temp = document.createElement("div");
+                temp.innerHTML=fruits[i].quantity + " " + fruits[i].kind +"\n";
+                temp.style.color = fruits[i].color;
+                document.getElementsByTagName("body")[0].appendChild(temp);
+            }
+            
+            
+        </script>
+        
+        
+        <div></div>
+
+    </body>
+</html>
