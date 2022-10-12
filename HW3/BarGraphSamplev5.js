@@ -101,6 +101,7 @@ d3.csv("GDP2022TrillionUSDollars.csv",rowConverter).then(function(data){
         of each bar is determined by the height of the svc canvas - the scaled 
         valueof the gdp of each country. The color of each bar has a minimum value
         of 0,0,50 and increases along the gradiant of blue as the gdp gets lower.
+        
     */
     
     svg.selectAll("rect")
@@ -135,6 +136,10 @@ d3.csv("GDP2022TrillionUSDollars.csv",rowConverter).then(function(data){
         The y axis is given a title, in the form of text, and is then rotated
         and displaced such that it is aligned vertically and within the left 
         margin area of the bar chart
+        
+        The "x" and "y" attributes of the axes determine the start position of
+        the labels, while the "dx" "dy" values determine the how far apart the labels will be from one another
+        
     */
     svg.selectAll("text")
         .data(data)
