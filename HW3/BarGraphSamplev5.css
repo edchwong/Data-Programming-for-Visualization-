@@ -10,3 +10,31 @@ p{
     font-size: 12px;
     font-weight: bold;
 }
+
+/*
+    x axis
+    svg.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + height + ")")
+        .call(xAxis)
+        .selectAll("text")
+        .attr("dx", "-.8em")
+        .attr("dy", ".25em")
+        .style("text-anchor", "end")
+        .attr("font-size", "12px")
+        .attr("transform", "rotate(-60)");
+        
+    
+    y axis
+    svg.append("g")
+    .attr("class", "y axis")
+    .call(yAxis)
+    .append("text")
+        .attr("class", "axis-title")
+        .attr("transform", "rotate(-90)")
+        .attr("y", -3*margin.left/4)
+        .attr("x", -height/3)
+        .style("text-anchor", "end")
+        .attr("fill", "black")
+        .text("Trillions of US Dollars ($)");
+*/
