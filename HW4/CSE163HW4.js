@@ -84,9 +84,15 @@ d3.csv("BRICSdata.csv", type, function(data) {
     // X Axis labels
     g.append("g")
     .attr("class", "axis axis--x")
+    .call(d3.axisBottom(x))
     .attr("transform", "translate(0," + height + ")") //moves it to the bottom of the svg
     .attr("dx", "-.8em")
-    .call(d3.axisBottom(x));
+    .append("text")
+    .attr("fill", "#000")
+    .text("Years")
+    .attr("x", width/2)
+    .attr("y", 30)
+    ;
     
     // Y Axis labels
     g.append("g")
