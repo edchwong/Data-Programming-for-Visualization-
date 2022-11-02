@@ -103,7 +103,7 @@ d3.csv("BRICSdata.csv", type, function(data) {
     .attr("y", -3*margin.left/4)  // moves label into the left margin
     .attr("x", -height/3)   // offsets it so that it starts lower on the y axis
     .attr("fill", "#000")
-    .text("Energy Consumption per Capita in Million BTU's per person");
+    .text("Million BTU's per person");
 
     
     // placing the lines i
