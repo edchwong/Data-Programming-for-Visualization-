@@ -1,0 +1,88 @@
+/*Tooltip styling*/
+#tooltip {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    padding: 5px;
+    background-color: grey;
+    pointer-events: none;
+}
+
+#tooltip.hidden {
+    display: none;
+}
+
+#tooltip p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.oneLine {display:flex; flex-flow:row wrap;}
+
+.title {
+    text-align:center;
+}
+.left {
+    width:33px;
+    text-align:left;
+}
+.mid {
+    width:33px;
+    text-align:center;
+}
+.right {
+    width:33px;
+    text-align:right;
+}
+
+/*Button/Swithch styling*/
+/*from stack overflow*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+
+.tab {
+    tab-size: 8;
+}
+.switch input {display:none;}
+
+.slider {
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .6s;
+    transition: .6s;
+}
+
+.slider:before {
+    border-radius: 20px;
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 5px;
+    bottom: 5px;
+    background-color: white;
+    -webkit-transition: .6s;
+    transition: .6s;
+}
+
+input:checked + .slider {
+    background-color: lawngreen;
+}
+
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(28px);
+    -ms-transform: translateX(28px);
+    transform: translateX(28px);
+}
+
+
