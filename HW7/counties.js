@@ -112,11 +112,7 @@ d3.json("counties-10m.json", function(error, counties) {
             .on("mouseover", function(d) {
                 //console.log(d);
                 d3.select("#tooltip")
-<<<<<<< HEAD
-                    .style("left", (d3.event.clientX+20) + "px")
-=======
                     .style("left", (d3.event.clientX + 20) + "px")
->>>>>>> 0c55c5066b65f89762ebbf5e66872d513f263bec
                     .style("top", (d3.event.clientY - 20) + "px");
                 d3.select(".title")
                     .text(d.properties.name);
@@ -126,7 +122,6 @@ d3.json("counties-10m.json", function(error, counties) {
             })
             .on("mouseout", function() {
                 d3.select("#tooltip").classed("hidden", true);
-                    
             });
         
         //When County border is clicked then the borders are highlighted with black stroke
